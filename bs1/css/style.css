@@ -1,7 +1,21 @@
-/* ==========================================================================
+/* =======================================a===================================
    ========================================================================== */
 html, body {
     overflow-x: hidden;
+}
+.loading {
+	animation: load 1.5s;
+	position: relative;
+}
+@keyframes load {
+	0% {
+		top: -500px;
+		opacity: 0;
+	}
+	100% {
+		top: 0;
+		opacity: 1;
+	}
 }
 ._text-capital { text-transform: capitalize; }
 ._text-lower { text-transform: lowercase; }
